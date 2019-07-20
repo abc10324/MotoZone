@@ -1,0 +1,245 @@
+/* article-content area */
+  .article-content-area {
+    top: 65px;
+    left: 150px;
+    right: 150px;
+    bottom: 5px;
+  }
+
+  
+  
+  .article-content-area #post-block {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      right: 70px;
+      bottom: 30px;
+      overflow: auto;
+  }
+
+  .article-content-area #post-block::-webkit-scrollbar {
+    display: none;
+  }
+
+  #posts-area {
+    width: 100%;
+      
+  }
+  #posts-area #post-category {
+  	display: none;
+  }
+  #posts-area .single-post {
+      width: 100%;
+      margin: 20px auto;
+      text-align: left;
+  }
+
+  
+
+  #posts-area .single-post .post-header {
+      position: relative;
+      margin-bottom: 50px;
+      padding-left: 75px;
+      width: 100%;
+      height: 45px;
+      text-align: left;
+  }
+
+  #posts-area .single-post .post-header .post-header-icon {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      display: inline-block;
+      width: 45px;
+      height: 45px; 
+      border-radius: 45px;
+      overflow: hidden;
+      border: 1px solid lightgrey;
+      cursor: pointer;
+    }
+
+  #posts-area .single-post .post-header .post-header-user-no {
+  	display: none;
+  }
+
+  #posts-area .single-post .post-header .post-header-author {
+      height: 25px;
+      font-size: 16px;
+      line-height: 25px;
+      color: black;
+  }
+
+  #posts-area .single-post .post-header .post-header-date {
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(105, 105, 105);
+}
+
+  #posts-area .single-post .post-body img{
+      margin: 20px auto;
+      max-width: 100%;
+  }
+  
+  #posts-loading {
+  	width: 100%;
+  	height: 50px;
+  }
+  
+  #posts-loading img {
+  	display: inline-block;
+  	width: 50px;
+  	height: 50px;
+  	margin: 0 auto;
+  	opacity: 0;
+  }
+
+  hr {
+    border-color: rgb(172, 172, 172);
+  }
+  
+  #post-fn-block {
+      position: absolute;
+      top: 50px;
+      right: 10px;
+      width: 50px;
+      padding-left: 7.5px;
+      padding-right: 7.5px;
+  }
+
+  #post-fn-block i {
+      display: block;
+      width: 35px;
+      height: 35px;
+      margin-bottom: 10px;
+      line-height: 35px;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      border-radius: 5px;
+      transition: 0.5s;
+  }
+
+  #post-fn-block i:hover {
+      color: rgb(0, 195, 255);
+      transition: 0.7s;
+  }
+
+  #post-fn-block .share {
+      background-color: white;
+      font-size: 35px;
+      color: black;
+      transition: 0.7s;
+  }
+  
+  #post-fn-block #fb-share:hover {
+      color: blue;
+  }
+
+  #post-fn-block #line-share:hover {
+    color: green;
+  }
+  
+  .post-fn-btn {
+  	cursor: pointer;
+  }
+
+/* reply area */
+.article-reply-area {
+    width: 80vw;
+    height: 85vh;
+    margin-top: -40vh;
+    margin-left: -40vw;
+    z-index: 8;
+}
+
+.article-reply-area h2 {
+    text-align: center;
+}
+
+.article-reply-area #article-reply-title {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.ck-content{
+    height: calc(85vh - 320px);
+    text-align: left;
+}
+
+/* user info card area */
+.user-info-card {
+    width: 400px;
+    height: 430px;
+    margin-top: -215px;
+    margin-left: -200px;
+    z-index: 8;
+}
+
+.user-info-card #user-info-card-icon{
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    border: 1px solid lightgrey;
+    border-radius: 125px;
+    
+}
+
+.user-info-card #user-info-card-name {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.user-info-card #user-info-card-user-no {
+	display: none;
+}
+
+.user-info-card button {
+    width: 44% !important;
+    margin: 0 calc((10%-10px)/4);
+}
+
+.btn-fixed {
+	color: gray;
+}
+
+.btn-fixed:hover {
+  background-color: rgb(185, 185, 185);
+  transition: 0.5s;
+}
+
+
+/* expend button / window*/
+.expend-btn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  transition: 0.5s;
+}
+
+.expend-btn:hover {
+  color: green;
+  transition: 0.3s;
+}
+
+.expend-window {
+  top: 0 !important;
+  left: 70px !important;
+  right: 70px !important;
+  bottom: 0 !important;
+}

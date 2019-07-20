@@ -1,0 +1,18 @@
+/* header area */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2;
+}
+
+#icon {
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    width: 200px;
+    z-index: 3;
+  }

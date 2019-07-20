@@ -1,0 +1,53 @@
+body {
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+    background-position-y: 60px;
+}
+/* 欄位th */
+.col-sm-1 col-md-1 text-center{
+	width:100px;
+}
+/* description 的圖片大小 */
+.media-heading img{
+	display:none;
+}
+/* 數量的input */
+.qty{
+	width:50px;
+	height:30px;
+}
+.hidden_item{
+	display:none;
+}
+.itemtitle{
+	font-size:1.9em;
+}
+.unit{
+	font-size:150%;
+	font-weight:bold;
+}
+.price{
+	font-size:150%;
+	font-weight:bold;
+}
+#keepshopping{
+	font-weight:bold;
+	font-size:150%;
+}
+#totalaccount{
+	font-size:150%;
+	
+}
+#remove-item{
+	font-size:110%;
+}
+
+.media-body {
+	padding-left: 20px;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+          
+}

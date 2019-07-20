@@ -1,0 +1,155 @@
+/* Catgory area */
+#cat-area {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+
+.cat {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 calc((20% - 130px)/2);
+    margin-bottom: 15px;
+    padding: 0;
+    /* background:linear-gradient(45deg,rgba(255,255,255,0.9),rgba(80,80,80,0.9));  */
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,0.7);
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.cat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:linear-gradient(45deg,rgba(255,255,255,0.9),rgba(80,80,80,0.9));
+    opacity: 1;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.cat::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:linear-gradient(-45deg,rgba(154, 165, 1, 0.9),rgba(255, 255, 255, 0.9));
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.cat:hover::before{
+    opacity: 0;
+    transition: 0.5s;
+}
+.cat:hover::after{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.cat:hover {
+    border: 2px solid rgba(168, 180, 0, 0.7);
+    box-shadow: 0 0 10px rgb(207, 221, 3);
+    transition: 0.5s;
+    
+}
+
+.cat:hover > img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.cat div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 160px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+.cat img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 0.5s;
+}
+
+/* Content area */
+article {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+article section {
+    margin: 0 auto;
+    width: 770px;
+}
+
+.content-area {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 25px auto;
+    
+}
+
+.content-area .content-id {
+    display: none;
+}
+
+.content-area .content-img {
+    display: inline-block;
+    width: 30%;
+    max-height: 170px;
+    border-radius: 10px;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.content-area .content-img img {
+    width: 100%;
+}
+
+
+.content-area .content {
+    width: 65%;
+    margin-right: 2%;
+    margin-top: 0;
+    float: right;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height: 130px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.content-area .content h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.content-area .content h4{
+	margin-top: 15px;
+	white-space : nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+

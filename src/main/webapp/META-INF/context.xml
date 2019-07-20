@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+	<Resource name="jdbc/MotoZoneDB" auth="Container" type="javax.sql.DataSource"
+               maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+               username="sa" password="passw0rd" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+               url="jdbc:sqlserver://localhost:1433;databaseName=MotoZone"/>
+               
+<!--     <Resource name="jdbc/MotoZoneDB" auth="Container" type="javax.sql.DataSource" -->
+<!--                maxTotal="100" maxIdle="30" maxWaitMillis="10000" -->
+<!--                username="motozoneAdmin@motozone106" password="Abc9814016" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" -->
+<!--                url="jdbc:sqlserver://motozone106.database.windows.net:1433;database=MotoZone"/> -->
+</Context>

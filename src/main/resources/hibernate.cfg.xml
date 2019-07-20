@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2008Dialect</property>
+<!--         <property name="hibernate.connection.datasource">java:comp/env/jdbc/MotoZoneDB</property> -->
+        
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <!-- need to open this line during executing test -->
+<!--         <property name="current_session_context_class">thread</property> -->
+    
+		<!--     	article area          -->
+    	<mapping class="com.motozone.article.model.ArticleBean"/>
+    	<mapping class="com.motozone.article.model.ArticleIdBean"/>
+    	<mapping class="com.motozone.article.model.ArticlePostBean"/>
+    	<mapping class="com.motozone.article.model.ArticleListBean"/>
+    	
+    	
+    	<!--     	autobuy area          -->
+    	<mapping class="com.motozone.autobuy.model.ProductPostBean"/>
+    	<mapping class="com.motozone.autobuy.model.ProductCartBean"/>
+    	<mapping class="com.motozone.autobuy.model.ProductCartViewBean"/>
+    	<mapping class="com.motozone.autobuy.model.ProductQuestionBean"/>
+    	<mapping class="com.motozone.autobuy.model.OrderIdBean"/>
+    	<mapping class="com.motozone.autobuy.model.OrdersBean"/>
+    	<mapping class="com.motozone.autobuy.model.OrdersViewBean"/>
+    	
+    	<!--     	general area          -->
+    	<mapping class="com.motozone.general.model.CategoryBean"/>
+    	<mapping class="com.motozone.general.model.CategoryStageBean"/>
+    	<mapping class="com.motozone.general.model.CategoryTranslateBean"/>
+    	<mapping class="com.motozone.general.model.ImageBean"/>
+    	<mapping class="com.motozone.general.model.UsersBean"/>
+    	<mapping class="com.motozone.general.model.UsersInfoBean"/>
+    	<mapping class="com.motozone.general.model.FriendsBean"/>
+    	<mapping class="com.motozone.general.model.ChatBotBean"/>
+    	
+    </session-factory>
+</hibernate-configuration>
